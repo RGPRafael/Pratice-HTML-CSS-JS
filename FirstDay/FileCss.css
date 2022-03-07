@@ -1,0 +1,66 @@
+
+/* bar title */
+#TitleProblem{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+   
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    width: 100vw;
+}
+/* background */
+body{
+    margin: 0;
+    background-color: rgb(92, 92, 92);
+    background-image:
+   -moz-linear-gradient(right, rgb(129, 129, 129), #292828);
+    
+}
+
+*{
+    color: white;
+    box-sizing: border-box;
+    
+}
+.ToolsLearning{
+    float: left;
+    width: 25%;
+}
+.main{
+    padding-top: 15%;
+    padding-left: 15%;
+    float: left;
+    width: 33%;
+}
+#myId{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+
+    background-color: black;
+    text-align: center;
+    /*background-image:
+    -moz-linear-gradient(left, rgb(32, 32, 32), #000000);*/
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#myId:hover
+{
+    background-color: #333333; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+#Monster{
+    float: left;
+    height: 80vh;
+    width: 42%;
+
+    
+}
+/* When using the opacity property to add transparency to the background
+of an element, all of its child elements inherit the same transparency. 
+This can make the text inside a fully transparent element hard to read. */
