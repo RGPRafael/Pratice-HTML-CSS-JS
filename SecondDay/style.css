@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+*{
+    color: white;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    width: 30vw;
+}    
+  
+.image{
+    float: left;
+    border-radius: 30px;
+    flex: 0.5;
+    margin: 10px;
+    transition: flex 0.7s ease-in;
+  }
