@@ -5,10 +5,35 @@ const prev      = document.getElementById('prev')
 const next      = document.getElementById('next')
 const progBar   = document.getElementsByClassName("progressBar")
 
-console.log(circulos)
-console.log(prev)
-console.log(next)
+const search    = document.querySelectorAll('.search') 
+const lupe      = document.querySelectorAll('.btm') 
+
 console.log(progBar)
+console.log('lupe:', lupe)
+console.log('search',search)
+
+let button = false
+lupe[0].addEventListener('click',extendSearchBar)
+
+function extendSearchBar(){
+    updateBar()
+}
+
+function updateBar(){
+    if(!button){
+        for (var i = 0, len = search.length; i < len; i++) {
+            search[i].classList.add("active")
+        }
+        button = true
+    }
+    else{
+        for (var i = 0, len = search.length; i < len; i++) {
+            search[i].classList.remove("active")
+        }
+        button = false
+    }
+
+}
 
 let currentActive = 0
 
