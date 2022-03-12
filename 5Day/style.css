@@ -1,0 +1,155 @@
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox*/
+
+.navbar{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    position: relative;
+    background-color: #e84393;
+    background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+    /* https://www.eggradients.com/category/black-gradient*/
+}
+.search{
+    border: none;
+    padding: 15px;
+    height: 10px;
+    width: 10px;
+    transition: width 0.3s ease;
+}
+
+.content{
+    display:flex;  /* possibilita centralização*/
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    filter:blur(30px);
+    z-index: -1;
+    
+}
+.loading{
+    color: white;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.btm{
+    background-color: white;
+    border:0;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.btm:focus, .search:focus{
+    outline: none;
+}
+
+.search.active{
+    width: 200px;
+}
+
+.btm.active{
+    transform: translateX(198px);
+}
+
+body{
+    margin: 0; /* bar stays ok */
+    background-color: rgb(0, 0, 0);
+    counter-reset: section;
+}
+
+
+.progress{
+    display: flex;
+    justify-content:space-between;
+    position: relative; /* porque ? */
+}
+
+.progressBar{
+    background-color: #FF00FF;
+    position: absolute;
+    top: 50% ;
+    left: 1;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+    height: 1px;
+    width: 50%;
+
+}
+
+.progress:before{
+    content: '';
+    background-color: #7c6b7c;
+    position: absolute;
+    top: 50% ;
+    left: 1;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 1px;
+    width: 100%;
+
+}
+*{
+    box-sizing: border-box;
+    
+}
+.block{
+    padding: auto;
+    margin: 15px;
+    height: 90px; 
+    width: 90px;
+    border-radius: 50%; /* circle form */
+    background-color: rgb(202, 50, 182);
+
+}
+
+/* div.block: hover also works*/
+
+/* https://codersblock.com/blog/creating-glow-effects-with-css/ */
+.block:hover {
+    background-color: #FF00FF;
+    box-shadow:
+    0 0 25px 10px rgb(153, 6, 109); /* outer cyan */
+}
+
+.block.active {
+    background-color: #FF00FF;
+    box-shadow:
+    0 0 25px 10px rgb(153, 6, 109); /* outer cyan */
+    transform: scale(1.2);
+
+}
+
+h5{
+    padding: 15px 0;
+    text-align: center;
+    color: #030103;
+    text-transform: uppercase;
+}
+    /* https://css-tricks.com/almanac/properties/c/counter-increment/ */
+h5:before {
+    counter-increment: section;
+    content: counter(section, upper-roman);
+  }
+
+.bottom{
+    color: white;
+    padding: auto;
+    margin: 15px;
+    height: 70px; 
+    width: 200px;
+    border-radius: 25px; /* circle form */
+    background-color: rgb(70, 71, 133);
+    border-color: rgb(32, 0, 121);
+}
+
+.bottom:active{
+    transform: scale(0.98);
+}
+
+.bottom:disabled{
+    background-color: #4d4d4d;
+    
+}
