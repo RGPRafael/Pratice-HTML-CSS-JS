@@ -1,0 +1,89 @@
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox*/
+
+
+/*navbar content */
+.navbar{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    position: relative;
+    background-color: #e84393;
+    background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+    /* https://www.eggradients.com/category/black-gradient*/
+}
+.search{
+    border: none;
+    padding: 15px;
+    height: 10px;
+    width: 10px;
+    transition: width 0.3s ease;
+}
+
+.loading{
+    color: white;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.btm{
+    background-color: white;
+    border:0;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.btm:focus, .search:focus{
+    outline: none;
+}
+
+.search.active{
+    width: 200px;
+}
+
+.btm.active{
+    transform: translateX(198px);
+}
+
+/*navbar content */
+
+body{
+    margin: 0; /* bar stays ok */
+    background-color: rgb(0, 0, 0);
+}
+
+*{
+    box-sizing: border-box;    
+}
+
+.content{
+    display:flex;  /* possibilita centralização*/
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+.counter-container{
+    display: flex;
+    color:white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 30px;
+}
+.counter-container .img{
+    width: 33%vw;
+    height: 50vh;
+    background-color:#e84393;
+}
+.counter{
+    font-size: 30px;
+    margin-top:10px;
+}
+
+@media (max-width: 580px) {
+    .content{
+        flex-direction: column;
+    } 
+}
