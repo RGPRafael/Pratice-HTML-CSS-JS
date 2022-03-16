@@ -1,0 +1,52 @@
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox*/
+
+body{
+    margin: 0;
+    display:flex;  /* possibilita centralização*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden; 
+}
+
+*{
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+h1{
+    margin: 10px;
+}
+.block{
+    display: flex;
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(14, 204, 230);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgb(7, 125, 141);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.block:nth-of-type(even){
+    transform: translateX(-400%);
+    transition: transform 0.4s ease;
+}
+
+.block.show{
+    transform: translateX(0);
+}
+/* div.block: hover also works*/
+
+/* https://codersblock.com/blog/creating-glow-effects-with-css/ */
+.block:hover {
+    background-color: #4bc4e2;
+    box-shadow:
+    0 0 25px 10px rgb(16, 79, 90); /* outer cyan */
+}
+
+@media screen and (max-width: 700px) {
+}
