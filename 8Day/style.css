@@ -1,0 +1,48 @@
+/*https://zellwk.com/blog/css-values-in-js/*/
+
+
+body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}    
+img{
+    width: 33%vw;
+    height: 400px;
+}
+
+.panel{
+    float: left;
+    margin: 10px;
+    border-radius: 30px;
+  }
+
+.panel:hover{
+      transform: scale(1.1, 1.1) ;
+}
+
+.panel:active{
+    transform: scale(0.8, 0.8) ;
+}
+
+.panel:nth-child(1){
+      background-color: #008000;
+  }
+.panel:nth-child(2){
+      background-color: #d11717;
+  }
+.panel:nth-child(3){
+      background-color: #c7d31a;
+  }
