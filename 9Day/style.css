@@ -1,0 +1,51 @@
+/*https://zellwk.com/blog/css-values-in-js/*/
+/* https://www.eggradients.com/category/black-gradient */
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+}
+
+*{
+    box-sizing: border-box;
+}
+aside {
+    color: #fff;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    width: 250px;
+    height: 100vh;
+    border-top-right-radius: 80px;
+    padding-top: 35px;
+}
+aside a{
+    
+    color: rgb(237, 237, 238);
+    display: block;
+    padding: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+aside a i {
+  margin-right: 5px;
+}
+aside a:hover{
+    color: rgb(248, 248, 248);
+    
+    background: rgb(26, 89, 126);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+h1{
+    color: aliceblue;
+    margin-left: 30px;
+
+}
