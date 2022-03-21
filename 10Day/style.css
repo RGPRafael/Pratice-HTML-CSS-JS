@@ -1,0 +1,55 @@
+/* https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ */
+
+
+body{
+    margin: 0; /* bar stays ok */
+    background-color: rgb(0, 0, 0);
+    display:flex;                       /* possibilita centralização  */ 
+    justify-content: center;            /* possibilita centralização  */ 
+    align-items: center;                /* possibilita centralização  */ 
+    height: 100vh;                      /* possibilita centralização  */ 
+
+}
+
+.Randomize{
+
+    display: flex;    
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+.title{
+    color :aliceblue;
+}
+
+#btn{
+    height: 50px;
+    width: 200px;
+    color: rgb(250, 249, 255);
+    border-radius: 30px;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: rgb(50, 10, 250);
+
+  }
+
+  #btn:active {
+    transform: scale(0.8,0.8)
+  }
+
+  #number{
+    color: rgb(250, 249, 255);
+
+  }
