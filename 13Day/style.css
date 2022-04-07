@@ -1,0 +1,38 @@
+body{
+
+    margin: 0 auto;
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    /*background-color: yellow;*/
+    display: flex;
+    text-align: center;
+}
+.naruto{
+    background-image: url('narutonormal.png');
+    height: 373px;
+    width: 181px;
+    cursor: pointer;
+    border: none;
+    scale: 1;   
+}
+
+/*
+.chackra{
+    position:relative;
+    background-image: linear-gradient(to right, #1d9eda, #190a05);    
+    height: 120px;
+    width: 800px;
+    border-radius: 15px 15px 15px 15px;
+
+}*/
