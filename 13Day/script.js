@@ -1,8 +1,8 @@
-//var clone       = document.querySelector('.naruto');
-var clone = document.querySelectorAll('.naruto');
+var clone       = document.querySelector('.naruto');
+//var clone = document.getElementsByClassName('.naruto');
 var container   = document.querySelector('.container');
 var child_of_container = container.childElementCount;
-console.log(child_of_container)
+console.log(child_of_container);
 
 
 var cont = 0;
@@ -18,15 +18,5 @@ function teste(){
 
 }
 
-if( container.childElementCount > 1){
-    console.log('if' + clone.length);
 
-    for(let i = 0 ; i < clone.length; i++){
-        clone[i].addEventListener('click', teste);
-    }
-    clone = document.querySelectorAll('.naruto');
-}
-else{
-    console.log(clone.length + 'else');
-    clone[0].addEventListener('click', teste);    
-}
+clone.addEventListener('click', teste);    
